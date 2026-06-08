@@ -8,16 +8,24 @@ model.summary()
 ```
 
 ```text
-Model: "DeepLabV3Plus_IMX500"
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
-┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
-┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
-│ input_layer_27 (InputLayer)     │ (None, 128, 128, 3)    │             0 │
-├─────────────────────────────────┼────────────────────────┼───────────────┤
-│ deep_lab_v3_plus_imx500_1       │ (None, 128, 128, 21)   │       173,653 │
-│ (DeepLabV3PlusIMX500)           │                        │               │
-└─────────────────────────────────┴────────────────────────┴───────────────┘
- Total params: 173,653 (678.33 KB)
- Trainable params: 164,293 (641.77 KB)
- Non-trainable params: 9,360 (36.56 KB)
+Building DeepLabV3+ (TF/Keras) for IMX500…
+
+Parameters : 2,781,872
+FP32 size  : 10.61 MB  (limit: 12 MB)
+INT8 size  : 2.65 MB  (after PTQ ÷4 estimate)
+
+Input  : (1, 128, 128, 3)
+Output : (1, 128, 128, 8)  (expected: (1, 128, 128, 8))
+
+Layer count : 194
+
+====================================================
+  IMX500 Memory Estimate
+====================================================
+  Model (INT8)    : 2.653 MB
+  Runtime peak    : 2.000 MB
+  Reserved        : 0.001 MB
+  Total estimate  : 4.654 MB / 8.000 MB
+  Fits in chip    : ✓ YES
+====================================================
 ```
