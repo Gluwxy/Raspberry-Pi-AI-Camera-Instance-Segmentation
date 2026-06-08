@@ -7,7 +7,7 @@ model.summary()
 ´´´
 
 
-```text
+text
 Model: "DeepLabV3Plus_IMX500"
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
 ┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
