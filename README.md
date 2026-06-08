@@ -2,12 +2,12 @@
 Fine-tuned DeepLabV3+ Raspberry Pi AI Camera Instance Segmentation
 
 ### Model Architecture
-´´´
-model.summary()
-´´´
 
-´´´
-text
+```python
+model.summary()
+```
+
+```text
 Model: "DeepLabV3Plus_IMX500"
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
 ┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
@@ -20,4 +20,4 @@ Model: "DeepLabV3Plus_IMX500"
  Total params: 173,653 (678.33 KB)
  Trainable params: 164,293 (641.77 KB)
  Non-trainable params: 9,360 (36.56 KB)
-´´´
+```
